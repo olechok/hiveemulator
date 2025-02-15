@@ -1,6 +1,7 @@
 ﻿using DevOpsProject.CommunicationControl.Logic.Services.Interfaces;
 using DevOpsProject.Shared.Clients;
 using DevOpsProject.Shared.Configuration;
+using DevOpsProject.Shared.Enums;
 using DevOpsProject.Shared.Exceptions;
 using DevOpsProject.Shared.Messages;
 using DevOpsProject.Shared.Models;
@@ -15,11 +16,11 @@ namespace DevOpsProject.CommunicationControl.Logic.Services
         private readonly IRedisKeyValueService _redisService;
         private readonly RedisKeys _redisKeys;
         private readonly IPublishService _messageBus;
-        private readonly HiveHttpClient _hiveHttpClient;
+        private readonly CommunicationControlHttpClient _hiveHttpClient;
         private readonly ILogger<CommunicationControlService> _logger;
 
         public CommunicationControlService(ISpatialService spatialService, IRedisKeyValueService redisService, IOptionsSnapshot<RedisKeys> redisKeysSnapshot, 
-            IPublishService messageBus, HiveHttpClient hiveHttpClient, ILogger<CommunicationControlService> logger)
+            IPublishService messageBus, CommunicationControlHttpClient hiveHttpClient, ILogger<CommunicationControlService> logger)
         {
             _spatialService = spatialService;
             _redisService = redisService;
@@ -131,8 +132,15 @@ namespace DevOpsProject.CommunicationControl.Logic.Services
 
             try
             {
+                var command = new MoveHiveMindCommand
+                {
+                    CommandType = State.Move,
+                    Location = destination,
+                    Timestamp = DateTime.Now
+                };
+
                 // TODO: Schema can be moved to appsettings
-                var result = await _hiveHttpClient.SendHiveControlCommandAsync("http", hive.HiveIP, hive.HivePort, destination);
+                var result = await _hiveHttpClient.SendHiveControlCommandAsync(hive.HiveIP, hive.HivePort, command);
                 isSuccessfullySent = true;
                 return result;
             }

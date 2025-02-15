@@ -1,6 +1,4 @@
-﻿using DevOpsProject.CommunicationControl.API.DTO.Hive.Request;
-using DevOpsProject.CommunicationControl.API.DTO.Hive.Response;
-using DevOpsProject.CommunicationControl.Logic.Services.Interfaces;
+﻿using DevOpsProject.CommunicationControl.Logic.Services.Interfaces;
 using DevOpsProject.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
 

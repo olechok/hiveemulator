@@ -18,8 +18,11 @@ internal class Program
                         .ReadFrom.Services(services)
                         .Enrich.FromLogContext());
 
-        builder.Services.AddControllers();
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+        // TODO: consider this approach
+        builder.Services.AddControllers().AddJsonOptions(options =>
+        {
+            options.JsonSerializerOptions.PropertyNamingPolicy = null;
+        });        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
@@ -29,13 +32,11 @@ internal class Program
         builder.Services.AddCommunicationControlLogic();
 
         builder.Services.Configure<OperationalAreaConfig>(builder.Configuration.GetSection("OperationalArea"));
-        builder.Services.AddSingleton<IOptionsMonitor<OperationalAreaConfig>, OptionsMonitor<OperationalAreaConfig>>();
-
         
         var hiveRetryPolicy = HttpPolicyExtensions
             .HandleTransientHttpError()
             .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
-        builder.Services.AddHttpClient<HiveHttpClient>()
+        builder.Services.AddHttpClient<CommunicationControlHttpClient>()
             .AddPolicyHandler(hiveRetryPolicy);
 
 

@@ -1,0 +1,536 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83D3A1EA-64FE-407C-AB3A-A35CC2C9F8EE}|DevOpsProject.HiveMind.Logic\\DevOpsProject.HiveMind.Logic.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.logic\\services\\hivemindmovingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83D3A1EA-64FE-407C-AB3A-A35CC2C9F8EE}|DevOpsProject.HiveMind.Logic\\DevOpsProject.HiveMind.Logic.csproj|solutionrelative:devopsproject.hivemind.logic\\services\\hivemindmovingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|solutionrelative:devopsproject.hivemind.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|solutionrelative:devopsproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B279B4B-5842-413A-8E76-158C7472F45D}|DevOpsProject.CommunicationControl.Logic\\DevOpsProject.CommunicationControl.Logic.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.communicationcontrol.logic\\services\\spatialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B279B4B-5842-413A-8E76-158C7472F45D}|DevOpsProject.CommunicationControl.Logic\\DevOpsProject.CommunicationControl.Logic.csproj|solutionrelative:devopsproject.communicationcontrol.logic\\services\\spatialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.shared\\models\\movehivemindcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|solutionrelative:devopsproject.shared\\models\\movehivemindcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83D3A1EA-64FE-407C-AB3A-A35CC2C9F8EE}|DevOpsProject.HiveMind.Logic\\DevOpsProject.HiveMind.Logic.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.logic\\services\\hivemindservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83D3A1EA-64FE-407C-AB3A-A35CC2C9F8EE}|DevOpsProject.HiveMind.Logic\\DevOpsProject.HiveMind.Logic.csproj|solutionrelative:devopsproject.hivemind.logic\\services\\hivemindservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|solutionrelative:devopsproject\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.shared\\clients\\communicationcontrolhttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|solutionrelative:devopsproject.shared\\clients\\communicationcontrolhttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B279B4B-5842-413A-8E76-158C7472F45D}|DevOpsProject.CommunicationControl.Logic\\DevOpsProject.CommunicationControl.Logic.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.communicationcontrol.logic\\services\\communicationcontrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B279B4B-5842-413A-8E76-158C7472F45D}|DevOpsProject.CommunicationControl.Logic\\DevOpsProject.CommunicationControl.Logic.csproj|solutionrelative:devopsproject.communicationcontrol.logic\\services\\communicationcontrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.api\\controllers\\hivemindcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|solutionrelative:devopsproject.hivemind.api\\controllers\\hivemindcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|solutionrelative:devopsproject.hivemind.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.api\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|solutionrelative:devopsproject.hivemind.api\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|solutionrelative:devopsproject.hivemind.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject\\devopsproject.communicationcontrol.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|solutionrelative:devopsproject\\devopsproject.communicationcontrol.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject\\devopsproject.communicationcontrol.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|solutionrelative:devopsproject\\devopsproject.communicationcontrol.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|solutionrelative:devopsproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.api\\devopsproject.hivemind.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|solutionrelative:devopsproject.hivemind.api\\devopsproject.hivemind.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject\\controllers\\hivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|solutionrelative:devopsproject\\controllers\\hivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|solutionrelative:devopsproject\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.shared\\models\\hiveconnectresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|solutionrelative:devopsproject.shared\\models\\hiveconnectresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.shared\\models\\hivetelemetryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|solutionrelative:devopsproject.shared\\models\\hivetelemetryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.shared\\clients\\hivemindhttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|solutionrelative:devopsproject.shared\\clients\\hivemindhttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.shared\\models\\hivetelemetryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|solutionrelative:devopsproject.shared\\models\\hivetelemetryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BB9B9EA1-0281-4242-9344-07DFF6A20574}|DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj|solutionrelative:devopsproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.shared\\models\\operationalareaconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|solutionrelative:devopsproject.shared\\models\\operationalareaconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.shared\\configuration\\hivecommunicationconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|solutionrelative:devopsproject.shared\\configuration\\hivecommunicationconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83D3A1EA-64FE-407C-AB3A-A35CC2C9F8EE}|DevOpsProject.HiveMind.Logic\\DevOpsProject.HiveMind.Logic.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.logic\\services\\interfaces\\ihivemindmovingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83D3A1EA-64FE-407C-AB3A-A35CC2C9F8EE}|DevOpsProject.HiveMind.Logic\\DevOpsProject.HiveMind.Logic.csproj|solutionrelative:devopsproject.hivemind.logic\\services\\interfaces\\ihivemindmovingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83D3A1EA-64FE-407C-AB3A-A35CC2C9F8EE}|DevOpsProject.HiveMind.Logic\\DevOpsProject.HiveMind.Logic.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.logic\\services\\interfaces\\ihivemindservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83D3A1EA-64FE-407C-AB3A-A35CC2C9F8EE}|DevOpsProject.HiveMind.Logic\\DevOpsProject.HiveMind.Logic.csproj|solutionrelative:devopsproject.hivemind.logic\\services\\interfaces\\ihivemindservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.hivemind.api\\di\\logicconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65F5C602-86C3-4653-B3B4-326FC2D01B8D}|DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj|solutionrelative:devopsproject.hivemind.api\\di\\logicconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.shared\\models\\hivetelemetrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|solutionrelative:devopsproject.shared\\models\\hivetelemetrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|c:\\kpirepo\\hiveemulator\\src\\communicationcontrol\\devopsproject.shared\\models\\hiveconnectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C98DF1D-D8B9-4DC5-A0AB-723FE2E658BE}|DevOpsProject.Shared\\DevOpsProject.Shared.csproj|solutionrelative:devopsproject.shared\\models\\hiveconnectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 279,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\Program.cs",
+              "RelativeDocumentMoniker": "DevOpsProject\\Program.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\Program.cs",
+              "RelativeToolTip": "DevOpsProject\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAhwBQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:36:47.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpatialService.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.CommunicationControl.Logic\\Services\\SpatialService.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.CommunicationControl.Logic\\Services\\SpatialService.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.CommunicationControl.Logic\\Services\\SpatialService.cs",
+              "RelativeToolTip": "DevOpsProject.CommunicationControl.Logic\\Services\\SpatialService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T16:09:36.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "DevOpsProject\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "DevOpsProject\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAASwBkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:49:10.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HiveMindService.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.Logic\\Services\\HiveMindService.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.Logic\\Services\\HiveMindService.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.Logic\\Services\\HiveMindService.cs",
+              "RelativeToolTip": "DevOpsProject.HiveMind.Logic\\Services\\HiveMindService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAApwEwAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:24:01.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HiveMindMovingService.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.Logic\\Services\\HiveMindMovingService.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.Logic\\Services\\HiveMindMovingService.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.Logic\\Services\\HiveMindMovingService.cs",
+              "RelativeToolTip": "DevOpsProject.HiveMind.Logic\\Services\\HiveMindMovingService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAA3wDwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:49:28.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\appsettings.json",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.API\\appsettings.json",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\appsettings.json",
+              "RelativeToolTip": "DevOpsProject.HiveMind.API\\appsettings.json",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwCYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-15T11:59:59.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommunicationControlHttpClient.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Clients\\CommunicationControlHttpClient.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.Shared\\Clients\\CommunicationControlHttpClient.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Clients\\CommunicationControlHttpClient.cs",
+              "RelativeToolTip": "DevOpsProject.Shared\\Clients\\CommunicationControlHttpClient.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAASwBgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:37:45.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MoveHiveMindCommand.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\MoveHiveMindCommand.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.Shared\\Models\\MoveHiveMindCommand.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\MoveHiveMindCommand.cs",
+              "RelativeToolTip": "DevOpsProject.Shared\\Models\\MoveHiveMindCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:57:34.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CommunicationControlService.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.CommunicationControl.Logic\\Services\\CommunicationControlService.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.CommunicationControl.Logic\\Services\\CommunicationControlService.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.CommunicationControl.Logic\\Services\\CommunicationControlService.cs",
+              "RelativeToolTip": "DevOpsProject.CommunicationControl.Logic\\Services\\CommunicationControlService.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAhwI0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:57:18.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HiveMindController.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\Controllers\\HiveMindController.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.API\\Controllers\\HiveMindController.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\Controllers\\HiveMindController.cs",
+              "RelativeToolTip": "DevOpsProject.HiveMind.API\\Controllers\\HiveMindController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA3wCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:48:34.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\Program.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.API\\Program.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\Program.cs",
+              "RelativeToolTip": "DevOpsProject.HiveMind.API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAawBMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:34:41.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "DevOpsProject.HiveMind.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwBQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:25:23.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HiveController.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\Controllers\\HiveController.cs",
+              "RelativeDocumentMoniker": "DevOpsProject\\Controllers\\HiveController.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\Controllers\\HiveController.cs",
+              "RelativeToolTip": "DevOpsProject\\Controllers\\HiveController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAMwBcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:24:15.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DevOpsProject.CommunicationControl.API",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj",
+              "RelativeDocumentMoniker": "DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj",
+              "RelativeToolTip": "DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-15T14:15:55.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DevOpsProject.HiveMind.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-15T14:16:53.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DevOpsProject.CommunicationControl.API",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj",
+              "RelativeDocumentMoniker": "DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj",
+              "RelativeToolTip": "DevOpsProject\\DevOpsProject.CommunicationControl.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-15T14:15:52.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DevOpsProject\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DevOpsProject\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-15T13:20:45.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DevOpsProject.HiveMind.API",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj",
+              "RelativeToolTip": "DevOpsProject.HiveMind.API\\DevOpsProject.HiveMind.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-15T14:16:48.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "DevOpsProject\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "DevOpsProject\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T11:02:05.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HiveConnectResponse.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\HiveConnectResponse.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.Shared\\Models\\HiveConnectResponse.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\HiveConnectResponse.cs",
+              "RelativeToolTip": "DevOpsProject.Shared\\Models\\HiveConnectResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:34:06.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HiveTelemetryResponse.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\HiveTelemetryResponse.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.Shared\\Models\\HiveTelemetryResponse.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\HiveTelemetryResponse.cs",
+              "RelativeToolTip": "DevOpsProject.Shared\\Models\\HiveTelemetryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:35:39.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HiveMindHttpClient.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Clients\\HiveMindHttpClient.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.Shared\\Clients\\HiveMindHttpClient.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Clients\\HiveMindHttpClient.cs",
+              "RelativeToolTip": "DevOpsProject.Shared\\Clients\\HiveMindHttpClient.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:24:07.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HiveTelemetryRequest.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\HiveTelemetryRequest.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.Shared\\Models\\HiveTelemetryRequest.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\HiveTelemetryRequest.cs",
+              "RelativeToolTip": "DevOpsProject.Shared\\Models\\HiveTelemetryRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:30:17.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OperationalAreaConfig.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\OperationalAreaConfig.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.Shared\\Models\\OperationalAreaConfig.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\OperationalAreaConfig.cs",
+              "RelativeToolTip": "DevOpsProject.Shared\\Models\\OperationalAreaConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T11:47:17.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\appsettings.json",
+              "RelativeDocumentMoniker": "DevOpsProject\\appsettings.json",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject\\appsettings.json",
+              "RelativeToolTip": "DevOpsProject\\appsettings.json",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-15T13:24:28.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HiveCommunicationConfig.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Configuration\\HiveCommunicationConfig.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.Shared\\Configuration\\HiveCommunicationConfig.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Configuration\\HiveCommunicationConfig.cs",
+              "RelativeToolTip": "DevOpsProject.Shared\\Configuration\\HiveCommunicationConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T12:00:41.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IHiveMindService.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.Logic\\Services\\Interfaces\\IHiveMindService.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.Logic\\Services\\Interfaces\\IHiveMindService.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.Logic\\Services\\Interfaces\\IHiveMindService.cs",
+              "RelativeToolTip": "DevOpsProject.HiveMind.Logic\\Services\\Interfaces\\IHiveMindService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:40:19.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IHiveMindMovingService.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.Logic\\Services\\Interfaces\\IHiveMindMovingService.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.Logic\\Services\\Interfaces\\IHiveMindMovingService.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.Logic\\Services\\Interfaces\\IHiveMindMovingService.cs",
+              "RelativeToolTip": "DevOpsProject.HiveMind.Logic\\Services\\Interfaces\\IHiveMindMovingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:49:12.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LogicConfiguration.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\DI\\LogicConfiguration.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.HiveMind.API\\DI\\LogicConfiguration.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.HiveMind.API\\DI\\LogicConfiguration.cs",
+              "RelativeToolTip": "DevOpsProject.HiveMind.API\\DI\\LogicConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:48:52.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "HiveTelemetryModel.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\HiveTelemetryModel.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.Shared\\Models\\HiveTelemetryModel.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\HiveTelemetryModel.cs",
+              "RelativeToolTip": "DevOpsProject.Shared\\Models\\HiveTelemetryModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:40:58.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HiveConnectRequest.cs",
+              "DocumentMoniker": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\HiveConnectRequest.cs",
+              "RelativeDocumentMoniker": "DevOpsProject.Shared\\Models\\HiveConnectRequest.cs",
+              "ToolTip": "C:\\KpiRepo\\hiveemulator\\src\\CommunicationControl\\DevOpsProject.Shared\\Models\\HiveConnectRequest.cs",
+              "RelativeToolTip": "DevOpsProject.Shared\\Models\\HiveConnectRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:35:00.004Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

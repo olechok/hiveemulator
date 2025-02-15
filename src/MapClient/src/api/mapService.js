@@ -19,9 +19,9 @@ export const fetchHives = async () => {
         const response = await axios.get(`${API_BASE_URL}/hive`);
 
         return response.data.map(hive => ({
-            id: hive.hiveID,
-            lat: hive.telemetry?.location?.latitude ?? null,
-            lon: hive.telemetry?.location?.longitude ?? null,
+            id: hive.HiveID,
+            lat: hive.Telemetry?.Location?.Latitude ?? null,
+            lon: hive.Telemetry?.Location?.Longitude ?? null,
         })).filter(hive => hive.lat !== null && hive.lon !== null); // Remove invalid locations
 
     } catch (error) {

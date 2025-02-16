@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:8080/api/client";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 // Fetch the center coordinates for the initial map load
 export const fetchCenterCoordinates = async () => {

@@ -13,11 +13,13 @@ namespace DevOpsProject.CommunicationControl.API.Controllers
     {
         private readonly ICommunicationControlService _communicationControlService;
         private readonly IOptionsMonitor<OperationalAreaConfig> _operationalAreaConfig;
+        private readonly ILogger<ClientController> _logger;
 
-        public ClientController(ICommunicationControlService communicationControlService, IOptionsMonitor<OperationalAreaConfig> operationalAreaConfig)
+        public ClientController(ICommunicationControlService communicationControlService, IOptionsMonitor<OperationalAreaConfig> operationalAreaConfig, ILogger<ClientController> logger)
         {
             _communicationControlService = communicationControlService;
             _operationalAreaConfig = operationalAreaConfig;
+            _logger = logger;
         }
 
         [HttpGet("area")]
@@ -58,9 +60,19 @@ namespace DevOpsProject.CommunicationControl.API.Controllers
 
             foreach (var id in request.Hives)
             {
-                // TODO: [Daniil] CHECK IF IT IS FINE
-                Task.Run(() => _communicationControlService.SendHiveControlSignal(id, request.Destination));
+                _ = Task.Run(async () =>
+                {
+                    try
+                    {
+                        await _communicationControlService.SendHiveControlSignal(id, request.Destination);
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, $"Failed to send control signal for HiveID: {id}");
+                    }
+                });
             }
+
 
             return Accepted("Hives are being moved asynchronously.");
         }

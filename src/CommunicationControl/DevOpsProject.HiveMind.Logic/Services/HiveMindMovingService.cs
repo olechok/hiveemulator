@@ -8,7 +8,7 @@ namespace DevOpsProject.HiveMind.Logic.Services
     public class HiveMindMovingService : IHiveMindMovingService
     {
         private readonly ILogger<HiveMindMovingService> _logger;
-        private Timer? _movementTimer;
+        private Timer _movementTimer;
         public HiveMindMovingService(ILogger<HiveMindMovingService> logger)
         {
             _logger = logger;
@@ -45,7 +45,7 @@ namespace DevOpsProject.HiveMind.Logic.Services
             }
         }
 
-        private void UpdateMovement(object? state)
+        private void UpdateMovement(object state)
         {
             lock (typeof(HiveInMemoryState))
             {

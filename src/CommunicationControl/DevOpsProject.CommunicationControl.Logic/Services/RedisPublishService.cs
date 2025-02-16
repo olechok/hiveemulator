@@ -11,10 +11,10 @@ namespace DevOpsProject.CommunicationControl.Logic.Services
         private readonly IConnectionMultiplexer _connectionMultiplexer;
         private readonly RedisOptions _redisOptions;
 
-        public RedisPublishService(IConnectionMultiplexer connectionMultiplexer, IOptions<RedisOptions> redisOptions)
+        public RedisPublishService(IConnectionMultiplexer connectionMultiplexer, IOptionsMonitor<RedisOptions> redisOptions)
         {
             _connectionMultiplexer = connectionMultiplexer;
-            _redisOptions = redisOptions.Value;
+            _redisOptions = redisOptions.CurrentValue;
         }
 
         public async Task Publish<T>(T message)

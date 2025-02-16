@@ -14,7 +14,7 @@ namespace DevOpsProject.HiveMind.Logic.Services
         private readonly HiveMindHttpClient _httpClient;
         private readonly ILogger<HiveMindService> _logger;
         private readonly HiveCommunicationConfig _communicationConfigurationOptions;
-        private Timer? _telemetryTimer;
+        private Timer _telemetryTimer;
 
         public HiveMindService(HiveMindHttpClient httpClient, ILogger<HiveMindService> logger, IOptionsSnapshot<HiveCommunicationConfig> communicationConfigurationOptions)
         {
@@ -33,8 +33,8 @@ namespace DevOpsProject.HiveMind.Logic.Services
             };
             
             var connectResult = await _httpClient.SendCommunicationControlConnectAsync(_communicationConfigurationOptions.RequestSchema, 
-                _communicationConfigurationOptions.CommunicationControlIP,
-                _communicationConfigurationOptions.CommunicationControlPort, request);
+                _communicationConfigurationOptions.CommunicationControlIP, _communicationConfigurationOptions.CommunicationControlPort,  
+                _communicationConfigurationOptions.CommunicationControlPath, request);
 
             _logger.LogInformation($"Connect result for HiveID: {request.HiveID}: {connectResult}");
 
@@ -87,7 +87,7 @@ namespace DevOpsProject.HiveMind.Logic.Services
             _logger.LogInformation("Telemetry timer stopped.");
         }
 
-        private async void SendTelemetry(object? state)
+        private async void SendTelemetry(object state)
         {
             var currentLocation = HiveInMemoryState.CurrentLocation;
 
@@ -104,8 +104,8 @@ namespace DevOpsProject.HiveMind.Logic.Services
                 };
 
                 var connectResult = await _httpClient.SendCommunicationControlTelemetryAsync(_communicationConfigurationOptions.RequestSchema, 
-                    _communicationConfigurationOptions.CommunicationControlIP,
-                    _communicationConfigurationOptions.CommunicationControlPort, request);
+                    _communicationConfigurationOptions.CommunicationControlIP, _communicationConfigurationOptions.CommunicationControlPort, 
+                    _communicationConfigurationOptions.CommunicationControlPath, request);
 
                 _logger.LogInformation($"Telemetry sent for HiveID: {request.HiveID}: {connectResult}");
 

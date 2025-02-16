@@ -1,4 +1,5 @@
-﻿using DevOpsProject.HiveMind.Logic.Services.Interfaces;
+﻿using Asp.Versioning;
+using DevOpsProject.HiveMind.Logic.Services.Interfaces;
 using DevOpsProject.Shared.Configuration;
 using DevOpsProject.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -6,8 +7,9 @@ using Microsoft.Extensions.Options;
 
 namespace DevOpsProject.HiveMind.API.Controllers
 {
+    [ApiVersion("1.0")]
     [ApiController]
-    [Route("api")]
+    [Route("api/v{version:apiVersion}")]
     public class HiveMindController : Controller
     {
         private readonly IHiveMindService _hiveMindService;

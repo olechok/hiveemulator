@@ -18,9 +18,10 @@ namespace DevOpsProject.CommunicationControl.Logic.Services
         private readonly IPublishService _messageBus;
         private readonly CommunicationControlHttpClient _hiveHttpClient;
         private readonly ILogger<CommunicationControlService> _logger;
+        private readonly IOptionsMonitor<ComControlCommunicationConfiguration> _communicationControlConfiguration;
 
         public CommunicationControlService(ISpatialService spatialService, IRedisKeyValueService redisService, IOptionsSnapshot<RedisKeys> redisKeysSnapshot, 
-            IPublishService messageBus, CommunicationControlHttpClient hiveHttpClient, ILogger<CommunicationControlService> logger)
+            IPublishService messageBus, CommunicationControlHttpClient hiveHttpClient, ILogger<CommunicationControlService> logger, IOptionsMonitor<ComControlCommunicationConfiguration> communicationControlConfiguration)
         {
             _spatialService = spatialService;
             _redisService = redisService;
@@ -28,6 +29,7 @@ namespace DevOpsProject.CommunicationControl.Logic.Services
             _messageBus = messageBus;
             _hiveHttpClient = hiveHttpClient;
             _logger = logger;
+            _communicationControlConfiguration = communicationControlConfiguration;
         }
 
         public async Task<bool> DisconnectHive(string hiveId)
@@ -139,8 +141,8 @@ namespace DevOpsProject.CommunicationControl.Logic.Services
                     Timestamp = DateTime.Now
                 };
 
-                // TODO: Schema can be moved to appsettings
-                var result = await _hiveHttpClient.SendHiveControlCommandAsync(hive.HiveIP, hive.HivePort, command);
+                var result = await _hiveHttpClient.SendHiveControlCommandAsync(_communicationControlConfiguration.CurrentValue.RequestScheme,
+                    hive.HiveIP, hive.HivePort, _communicationControlConfiguration.CurrentValue.HiveMindPath, command);
                 isSuccessfullySent = true;
                 return result;
             }

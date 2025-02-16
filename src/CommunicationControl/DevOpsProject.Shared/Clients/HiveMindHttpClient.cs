@@ -13,14 +13,14 @@ namespace DevOpsProject.Shared.Clients
             _httpClient = httpClient;
         }
 
-        public async Task<string> SendCommunicationControlConnectAsync(string requestSchema, string ip, int port, HiveConnectRequest payload)
+        public async Task<string> SendCommunicationControlConnectAsync(string requestSchema, string ip, int port, string path, HiveConnectRequest payload)
         {
             var uriBuilder = new UriBuilder
             {
                 Scheme = requestSchema,
                 Host = ip,
                 Port = port,
-                Path = "api/hive/connect"
+                Path = $"{path}/connect"
             };
 
             var jsonContent = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
@@ -34,14 +34,14 @@ namespace DevOpsProject.Shared.Clients
             return null;
         }
 
-        public async Task<string> SendCommunicationControlTelemetryAsync(string requestSchema, string ip, int port, HiveTelemetryRequest payload)
+        public async Task<string> SendCommunicationControlTelemetryAsync(string requestSchema, string ip, int port, string path, HiveTelemetryRequest payload)
         {
             var uriBuilder = new UriBuilder
             {
                 Scheme = requestSchema,
                 Host = ip,
                 Port = port,
-                Path = "api/hive/telemetry"
+                Path = $"{path}/telemetry"
             };
 
             var jsonContent = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");

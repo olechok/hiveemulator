@@ -1,4 +1,5 @@
-﻿using DevOpsProject.CommunicationControl.API.DTO.Client.Request;
+﻿using Asp.Versioning;
+using DevOpsProject.CommunicationControl.API.DTO.Client.Request;
 using DevOpsProject.CommunicationControl.Logic.Services.Interfaces;
 using DevOpsProject.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -6,9 +7,9 @@ using Microsoft.Extensions.Options;
 
 namespace DevOpsProject.CommunicationControl.API.Controllers
 {
-
+    [ApiVersion("1.0")]
     [ApiController]
-    [Route("api/client")]
+    [Route("api/v{version:apiVersion}/client")]
     public class ClientController : Controller
     {
         private readonly ICommunicationControlService _communicationControlService;

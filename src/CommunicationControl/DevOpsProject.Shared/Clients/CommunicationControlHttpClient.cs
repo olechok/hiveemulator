@@ -13,15 +13,14 @@ namespace DevOpsProject.Shared.Clients
             _httpClient = httpClient;
         }
 
-        public async Task<string> SendHiveControlCommandAsync(string ip, int port, MoveHiveMindCommand command)
+        public async Task<string> SendHiveControlCommandAsync(string scheme, string ip, int port, string path, MoveHiveMindCommand command)
         {
             var uriBuilder = new UriBuilder
             {
-                // TODO: IMPORTANT - MOVE REQUEST SCHEMA TO CONFIG!!!
-                Scheme = "http",
+                Scheme = scheme,
                 Host = ip,
                 Port = port,
-                Path = "api/command"
+                Path = $"{path}/command"
             };
 
             var jsonContent = new StringContent(JsonSerializer.Serialize(command), Encoding.UTF8, "application/json");

@@ -8,7 +8,7 @@ namespace DevOpsProject.HiveMind.Logic.State
         private static readonly object _telemetryLock = new();
         private static readonly object _movementLock = new();
 
-        private static HiveOperationalArea? _operationalArea;
+        private static HiveOperationalArea _operationalArea;
 
         private static bool _isTelemetryRunning;
         private static bool _isMoving;

@@ -66,7 +66,7 @@ namespace DevOpsProject.CommunicationControl.Logic.Services
             bool result = await _redisService.SetAsync(GetHiveKey(model.HiveID), model);
             if (result)
             {
-                var operationalArea = await _spatialService.GetHiveOperationalArea(model);
+                var operationalArea = _spatialService.GetHiveOperationalArea(model);
                 await _messageBus.Publish(new HiveConnectedMessage
                 {
                     HiveID = model.HiveID,
@@ -120,7 +120,7 @@ namespace DevOpsProject.CommunicationControl.Logic.Services
 
         }
 
-        public async Task<string?> SendHiveControlSignal(string hiveId, Location destination)
+        public async Task<string> SendHiveControlSignal(string hiveId, Location destination)
         {
             var hive = await GetHiveModel(hiveId);
             if (hive == null)

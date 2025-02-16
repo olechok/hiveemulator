@@ -13,7 +13,7 @@ namespace DevOpsProject.Shared.Clients
             _httpClient = httpClient;
         }
 
-        public async Task<string?> SendCommunicationControlConnectAsync(string requestSchema, string ip, int port, HiveConnectRequest payload)
+        public async Task<string> SendCommunicationControlConnectAsync(string requestSchema, string ip, int port, HiveConnectRequest payload)
         {
             var uriBuilder = new UriBuilder
             {
@@ -34,7 +34,7 @@ namespace DevOpsProject.Shared.Clients
             return null;
         }
 
-        public async Task<string?> SendCommunicationControlTelemetryAsync(string requestSchema, string ip, int port, HiveTelemetryRequest payload)
+        public async Task<string> SendCommunicationControlTelemetryAsync(string requestSchema, string ip, int port, HiveTelemetryRequest payload)
         {
             var uriBuilder = new UriBuilder
             {

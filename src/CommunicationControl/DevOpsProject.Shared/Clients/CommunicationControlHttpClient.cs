@@ -13,7 +13,7 @@ namespace DevOpsProject.Shared.Clients
             _httpClient = httpClient;
         }
 
-        public async Task<string?> SendHiveControlCommandAsync(string ip, int port, MoveHiveMindCommand command)
+        public async Task<string> SendHiveControlCommandAsync(string ip, int port, MoveHiveMindCommand command)
         {
             var uriBuilder = new UriBuilder
             {

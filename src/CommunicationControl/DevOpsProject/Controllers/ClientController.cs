@@ -21,7 +21,7 @@ namespace DevOpsProject.CommunicationControl.API.Controllers
         }
 
         [HttpGet("area")]
-        public async Task<IActionResult> GetOperationalArea()
+        public IActionResult GetOperationalArea()
         {
             return Ok(_operationalAreaConfig.CurrentValue);
         }
@@ -51,14 +51,15 @@ namespace DevOpsProject.CommunicationControl.API.Controllers
         }
 
         [HttpPatch("hive")]
-        public async Task<IActionResult> SendBulkHiveMovingSignal(MoveHivesRequest request)
+        public IActionResult SendBulkHiveMovingSignal(MoveHivesRequest request)
         {
             if (request?.Hives == null || !request.Hives.Any())
                 return BadRequest("No hive IDs provided.");
 
             foreach (var id in request.Hives)
             {
-                Task.Run(async () => await _communicationControlService.SendHiveControlSignal(id, request.Destination));
+                // TODO: [Daniil] CHECK IF IT IS FINE
+                Task.Run(() => _communicationControlService.SendHiveControlSignal(id, request.Destination));
             }
 
             return Accepted("Hives are being moved asynchronously.");

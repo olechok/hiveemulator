@@ -1,4 +1,5 @@
 src/MapClient/node_modules
+src/MapClient/dist
 src/CommunicationControl/.idea
 src/CommunicationControl/.vs
 bin

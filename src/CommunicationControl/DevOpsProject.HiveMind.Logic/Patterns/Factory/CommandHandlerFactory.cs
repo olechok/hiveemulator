@@ -1,5 +1,8 @@
 ﻿using DevOpsProject.HiveMind.Logic.Patterns.Command.Interfaces;
 using DevOpsProject.HiveMind.Logic.Patterns.Factory.Interfaces;
+using DevOpsProject.Shared.Enums;
+using DevOpsProject.Shared.Models.HiveMindCommands;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 namespace DevOpsProject.HiveMind.Logic.Patterns.Factory
@@ -15,32 +18,24 @@ namespace DevOpsProject.HiveMind.Logic.Patterns.Factory
             _logger = logger;
         }
 
-        public async Task HandleCommand(object command)
+        public ICommandHandler GetHandler(HiveMindCommand command)
         {
-            var runtimeType = command.GetType();
-            var handlerType = typeof(ICommandHandler<>).MakeGenericType(runtimeType);
-
-            // TODO: OPTIONS:
-            // 1. We can use switch by runtimeType - to explicitly get implementation - for example, .GetService<ICommandHandler<MoveHiveMindCommand>>()
-            // 2. We can use base type HiveMindCommand CommandType property - to use this (enum) as switch and to get implementation like in p. 1
-            // 3. Current approach - fully dynamic BUT a bit messy - uses command, not type safe at compile time, etc
-            var handler = _serviceProvider.GetService(handlerType);
-            if (handler == null)
+            ICommandHandler handler = null;
+            var commandType = command.CommandType;
+            switch (commandType)
             {
-                _logger.LogError("No handler found for type: {type}", runtimeType.Name);
-                throw new NotSupportedException($"Handler not found for {runtimeType.Name}");
+                case HiveMindState.Move:
+                    handler = _serviceProvider.GetService<ICommandHandler<MoveHiveMindCommand>>();
+                    break;
+                case HiveMindState.Stop:
+                    handler = _serviceProvider.GetService<ICommandHandler<StopHiveMindCommand>>();
+                    break;
+                default:
+                    _logger.LogError("Corresponding handler not found for command: {@command}", command);
+                    throw new Exception($"Unsupported command occured, type: {command.CommandType}");
             }
 
-            _logger.LogInformation("Handling command of type {type}", runtimeType.Name);
-
-            var handleMethod = handlerType.GetMethod("HandleAsync");
-            if (handleMethod == null)
-            {
-                throw new InvalidOperationException($"Handler for {runtimeType.Name} does not implement HandleAsync()");
-            }
-
-            var task = (Task)handleMethod.Invoke(handler, new[] { command })!;
-            await task;
+            return handler;
         }
     }
 

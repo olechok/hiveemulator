@@ -1,9 +1,10 @@
-﻿using DevOpsProject.Shared.Models.HiveMindCommands;
+﻿using DevOpsProject.HiveMind.Logic.Patterns.Command.Interfaces;
+using DevOpsProject.Shared.Models.HiveMindCommands;
 
 namespace DevOpsProject.HiveMind.Logic.Patterns.Factory.Interfaces
 {
     public interface ICommandHandlerFactory
     {
-        Task HandleCommand(object command);
+        ICommandHandler GetHandler(HiveMindCommand command);
     }
 }

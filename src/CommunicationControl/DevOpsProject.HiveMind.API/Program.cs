@@ -90,7 +90,8 @@ groupBuilder.MapGet("ping", (IOptionsSnapshot<HiveCommunicationConfig> config) =
 
 groupBuilder.MapPost("command", async (HiveMindCommand command, [FromServices]ICommandHandlerFactory factory) =>
 {
-    await factory.HandleCommand(command);
+    var handler = factory.GetHandler(command);
+    await handler.HandleAsync(command);
     return Results.Ok();
 });
 

@@ -24,16 +24,14 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
-
-      - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        working-directory: src/CommunicationControl/DevOpsProject.HiveMind.API
+        run: dotnet restore && dotnet publish -c Release -o ./publish
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: src/CommunicationControl/DevOpsProject/publish
 
   deploy:
     runs-on: ubuntu-latest
@@ -54,9 +52,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_55325CB96964496DB6AEB84669F54567 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_50CCDE8090C1474C974510864BD41C7F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_86B5A01EA68F4B628201C99E3BF46ED0 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4587F7FD45E640B1A12C7310FD0D14B9 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A94AE653034A409AAB42CCECDA21E542 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D1D034B556E14FE4B50AB596EFF3632F }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp

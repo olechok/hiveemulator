@@ -50,17 +50,44 @@ jobs:
           name: .net-app
       
       - name: Login to Azure
+
+
+
         uses: azure/login@v2
+
+
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4587F7FD45E640B1A12C7310FD0D14B9 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A94AE653034A409AAB42CCECDA21E542 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D1D034B556E14FE4B50AB596EFF3632F }}
+
+
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_55325CB96964496DB6AEB84669F54567 }}
+
+
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_50CCDE8090C1474C974510864BD41C7F }}
+
+
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_86B5A01EA68F4B628201C99E3BF46ED0 }}
+
+
+
+
 
       - name: Deploy to Azure Web App
+
+
         id: deploy-to-webapp
+
+
         uses: azure/webapps-deploy@v3
+
+
         with:
+
+
           app-name: 'hivemind'
+
+
           slot-name: 'Production'
+
+
           package: .
           
